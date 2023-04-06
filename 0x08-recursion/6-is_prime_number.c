@@ -18,7 +18,7 @@ int is_prime_number(int n)
  @i: iterator 
  *Return: 1 if n is prime and 0 if otherwise
  */ 
-int real_prime_number(int n, int i);
+int real_prime_number(int n, int i)
 {
 	if (i == 1)
 		return (1);
