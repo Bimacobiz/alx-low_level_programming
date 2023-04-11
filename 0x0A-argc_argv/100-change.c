@@ -6,7 +6,7 @@
  * make change for an amount of money
  * @argc: number of arguments
  * @argv: array of arguments
- * Return: 0 indicates success 1 indicates error  
+ * Return: 0 indicates success 1 indicates error
  */
 int main(int argc, char *argv[])
 {
