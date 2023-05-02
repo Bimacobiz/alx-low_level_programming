@@ -1,0 +1,1 @@
+This directory contains a continuation of the Singly Linked Lists topic in C programming language. The topic is bout the implementation of the singy linked lists by adding and removing nodes, traversing the list, and searching for specific nodes. Some of the concepts covered include adding nodes, removing nodes, transversing the lists and searching or nodes. 
