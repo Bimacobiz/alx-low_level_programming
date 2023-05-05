@@ -1,0 +1,1 @@
+This repository contains C programs that demonstrate the use of bit manipulation techniques. Bit manipulation is the process of manipulating individual bits of a binary sequence, typically for the purpose of optimizing storage or improving processing speed.
