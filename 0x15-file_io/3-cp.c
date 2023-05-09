@@ -1,6 +1,8 @@
-#include "main.h"
+#iinclude "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
 
 char *create_buffer(char *file);
 void close_file(int file_d);
@@ -14,7 +16,7 @@ char *create_buffer(char *file)
 {
 	char *buffer;
 
-	buf = malloc(sizeof(char) * 1024);
+	buffer = malloc(sizeof(char) * 1024);
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO,
