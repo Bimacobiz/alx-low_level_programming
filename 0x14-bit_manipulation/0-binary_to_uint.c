@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 	int z;
 	unsigned int decnu = 0;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
 
 	for (z = 0; b[z]; z++)
