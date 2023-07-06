@@ -1,1 +1,11 @@
-This repository contains C programs that demonstrate the use of bit manipulation techniques. Bit manipulation is the process of manipulating individual bits of a binary sequence, typically for the purpose of optimizing storage or improving processing speed.
+0x14. C - Bit manipulation
+This project delves into bit manipulation in C programming. It contains a variety of projects that focus on the application of the concept of bit manipulation in c programming. Files contained in this directory include:
+Main.h - contains all the prototypes that have been used in the functions. 
+0-binary_to_uint.c - generation of a function that converts a binary number to an unsigned int.
+1-print_binary.c - a function that prints the binary representation of a number.
+2-get_bit.c - a function that returns the value of a bit at a given index.
+3-set_bit.c - a function that sets the value of a bit to 1 at a given index.
+4-clear_bit.c - a function that sets the value of a bit to 0 at a given index.
+5-flip_bits.c - a function that returns the number of bits you would need to flip to get from one number to another.
+100-get_endianness.c - a function that checks the endianness.
+101-password - contains the password of the given program 
