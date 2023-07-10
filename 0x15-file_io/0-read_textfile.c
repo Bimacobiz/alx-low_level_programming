@@ -12,27 +12,19 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fdvalue;/*fdvalue is the file descriptor value*/
-	ssize_t letters_read;
-
-	char *buffer = malloc((1024) * sizeof(char));
+	char *buffer;
+	ssize_t fdvalue;
+	ssize_t s;
+	ssize_t k;
 
 	fdvalue = open(filename, O_RDONLY);
-
 	if (fdvalue == -1)
-		return (-1);
+		return (0);
+	buffer = malloc(sizeof(char) * letters);
+	k = read(fdvalue, buffer, letters);
+	s = write(STDOUT_FILENO, buffer, k);
 
-	letters_read = read(fdvalue, buffer, letters);
-
-	if (letters_read == -1)
-	{
-		close(fdvalue);
-		return (-1);
-	}
-
-	write(STDOUT_FILENO, buffer, letters_read);
+	free(buffer);
 	close(fdvalue);
-	free(*buffer);
-
-	return (letters_read);
+	return (s);
 }
