@@ -37,7 +37,7 @@ void close_file(int file_d)
 {
 	int e;
 
-	a = close(file_d);
+	e = close(file_d);
 
 	if (e == -1)
 	{
