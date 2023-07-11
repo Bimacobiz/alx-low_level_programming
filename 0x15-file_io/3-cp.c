@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * create_buffer - a function that creates a buffer, allocating 1024 bytes for it.
+ * create_buffer - a function that creates a buffer,
+ * allocating 1024 bytes for it
  * @file: the file name whose chars are stored in the buffer.
  *
  * Return: a pointer to the buffer that has been allocated.
@@ -60,7 +61,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "used to cp file from file_to\n");
 		exit(97);
 	}
-
 	buff = create_buffer(argv[2]);
 	from = open(argv[1], O_RDONLY);
 	a = read(from, buff, 1024);
@@ -88,7 +88,6 @@ int main(int argc, char *argv[])
 		to = open(argv[2], O_WRONLY | O_APPEND);
 
 	} while (a > 0);
-
 	free(buff);
 	close_file(from);
 	close_file(to);
