@@ -1,4 +1,7 @@
 #include "main.h"
+
+char *create_buffer(char *file);
+void close_file(int file_d);
 /**
  * create_buffer - a function that creates a buffer,
  * allocating 1024 bytes for it
