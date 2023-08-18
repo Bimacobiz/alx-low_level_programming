@@ -1,6 +1,9 @@
 #include "lists.h"
+
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 /**
- *insert_dnodeint_at_index - a function that adds inserts a new node at a given position
+ *delete_dnodeint_at_index - a function that adds inserts a new node
+ *at a given position
  *@head: the head of the list
  *@index: index of the new node created
  *@n: new node value
