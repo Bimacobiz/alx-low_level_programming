@@ -4,6 +4,7 @@
  *in a linked dlistint_t list. 
  *@h: points to the head of the list
  *Return: Number of elements in the given list
+ */
 size_t dlistint_len(const dlistint_t *h)
 {
 	int ele_no = 0;
