@@ -1,10 +1,10 @@
 #include "lists.h"
 /**
  *add_dnodeint - adds a new node at the start of the
- *in a linked dlistint_t list. 
+ *in a linked dlistint_t list.
  *@head: double points to the head of the list
  *@n: elements added
- *Return: pointer to the new elements and NULL in 
+ *Return: pointer to the new elements and NULL in
  *case of failure
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
