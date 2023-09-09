@@ -17,7 +17,7 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	for (a = 0; a < ht->size; a++)
 	{
-		bucket = ht->array[a];
+		store = ht->array[a];
 		while (store)
 		{
 			if (not_fin)
