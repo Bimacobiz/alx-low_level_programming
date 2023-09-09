@@ -6,15 +6,16 @@
  *
  * Return: 64 bits hash value
  */
-unsigned int hash_djb2(const unsigned char *str)
+
+unsigned long int hash_djb2(const unsigned char *str)
 {
-	unsigned int hash;
+	unsigned long int alg_hash;
 	int k;
 
 	hash = 5381;
 	while ((k = *str++))
 	{
-		hash = ((hash << 5) + hash) + k; /* hash * 33 + k */
+		hash = ((alg_hash << 5) + alg_hash) + k;
 	}
-	return (hash);
+	return (alg_hash);
 }
