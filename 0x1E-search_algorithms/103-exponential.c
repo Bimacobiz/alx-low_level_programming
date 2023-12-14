@@ -53,7 +53,8 @@ int binary_search_index1(int *array, size_t l, size_t r, int value)
 }
 
 /**
- * exponential_search - uses exponential search to searc a value in a sorted array.
+ * exponential_search - uses exponential search to searc a value
+ * in a sorted array.
  * @array: The array to search.
  * @size: The array length.
  * @value: The value being sought.
